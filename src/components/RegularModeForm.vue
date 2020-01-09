@@ -123,10 +123,10 @@
                     } 
                 }
             }
-            //orderSelected: function() {
-            //    this.errorTitle = false;
+            orderSelected: function() {
+                this.errorTitle = false;
             //    EventBus.$emit("orderSelected", this.orderSelected);
-            //}
+            }
         },
         components: {
             "alpha-option": AlphaOption,
