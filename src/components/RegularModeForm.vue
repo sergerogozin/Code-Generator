@@ -122,7 +122,7 @@
                         this.thirdOrderOption.description = "Random order";  
                     } 
                 }
-            }
+            },
             orderSelected: function() {
                 this.errorTitle = false;
             //    EventBus.$emit("orderSelected", this.orderSelected);
