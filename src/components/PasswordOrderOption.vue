@@ -22,7 +22,6 @@
         methods: {
             updateRadioStatus: function() {
                 this.radioSelected = "checked";
-                //EventBus.$emit("radioButtonSelected");
                 EventBus.$emit("orderSelected", this.order);
             }
         },

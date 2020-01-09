@@ -122,10 +122,6 @@
                         this.thirdOrderOption.description = "Random order";  
                     } 
                 }
-            },
-            orderSelected: function() {
-                this.errorTitle = false;
-            //    EventBus.$emit("orderSelected", this.orderSelected);
             }
         },
         components: {
@@ -140,6 +136,9 @@
                 }
             })
             EventBus.$on("resetOrderCheckbox", ()=> {
+                this.errorTitle = false;
+            }), 
+            EventBus.$on("orderSelected", ()=> {
                 this.errorTitle = false;
             })
         }
